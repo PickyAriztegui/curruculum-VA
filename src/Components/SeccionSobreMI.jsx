@@ -15,6 +15,12 @@ const SeccionSobreMI = () => {
                 </div>
             </div>
 
+            <div className="col-md-6 col-sm-6 contenedor-seccion-sobre-mi-right">
+                <div className='seccion-sobre-mi-right'>
+                    <img src={FotoPerfil} alt="imagen-perfil" />
+                </div>
+            </div>
+
             <div className="col-md-6 col-sm-6 contenedor-seccion-sobre-mi-left">
                 <div className='seccion-sobre-mi-left'>
                     <h2>SOBRE MÍ <img className='logo-flecha' src={LogoFlecha} alt="logo-flecha" /></h2>
@@ -30,12 +36,7 @@ const SeccionSobreMI = () => {
                         y por eso tengo la convicción que trabajar en ambientes con buen 
                         clima laboral hacen armonioso y agradable practicar esta profesión
                         que tanto aprecio y es parte de mi vida.</p>
-                </div>
-            </div>
-
-            <div className="col-md-6 col-sm-6 contenedor-seccion-sobre-mi-right">
-                <div className='seccion-sobre-mi-right'>
-                    <img src={FotoPerfil} alt="imagen-perfil" />
+                    <a className='btn-contactarme' href="#">Contactarme</a>
                 </div>
             </div>
         </div>
