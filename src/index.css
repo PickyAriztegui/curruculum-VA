@@ -59,7 +59,7 @@
 }
 
 .contenedor-logo img {
-    width: 130%;
+    width: 105%;
 }
 
 
@@ -77,6 +77,21 @@
     font-weight: 800;
     font-family: 'Poppins';
     color: #FCCAE2;
+}
+
+.animate__fadeInDown {
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
+}
+
+.animate__fadeInRight {
+    animation-duration: 2s;
+   /*  animation-delay: 1s; */
+}
+
+.animate__fadeInLeft {
+    animation-duration: 2s;
+  /*   animation-delay: 2s; */
 }
 
 .seccion-hola-soy-VA h2 {
@@ -99,7 +114,7 @@
     display: flex;
     justify-content: flex-start;
     background-color: #FFEFF7;
-    padding: 90px 0;
+    padding: 100px 0;
     padding-right: 50px;
 }
 
@@ -108,7 +123,7 @@
     justify-content: center;
     align-items: center;
     background-color: #FFEFF7;
-    padding: 90px 0;
+    padding: 100px 0;
     padding-left: 50px;
 }
 
@@ -335,7 +350,8 @@
     justify-content: center;
     align-items: center;
     background-color: #F8F8F8;
-    padding: 60px 0;
+    padding: 60px 0 150px 0;
+    flex-direction: column;
 }
 
 .box-white {
@@ -350,7 +366,7 @@
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
-.box-pink h3 {
+.contenedor-formulario h3 {
     color: #FD6769;
     font-size: 22px;
     font-weight: 400;
@@ -365,13 +381,19 @@ form {
 }
 
 .input-nombre, .input-email, .text-area-mensaje {
-    width: 500px;
+    width: 400px;
     margin-bottom: 15px;
+    height: 55px;
 }
 
 .form-control {
     font-family: 'Open Sans' !important;
     border: 1px solid #FCCAE2 !important;
+}
+
+
+textarea.form-control.text-area-mensaje {
+    height: 150px;
 }
 
 .btn-formulario {
@@ -393,6 +415,57 @@ form {
     border: 1px solid #FD6769;
     color: #FD6769;
     transition: all 1s;
+}
+
+
+/* FOOTER */
+.contenedor-logo-footer, .contenedor-logos-redes-sociales {
+    background-color: #FD6769;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-logos-redes-sociales {
+    justify-content: flex-start;
+    padding-left: 200px;
+}
+
+.logos-footer img {
+    position: relative;
+    top: -6px;
+}
+
+.logos-footer p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: #FFF;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.logos-footer a {
+    text-decoration: none;
+    display: flex;
+}
+
+.logos-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 35px;
+    margin-right: 80px;
+}
+
+.logos-redes-sociales-fila-2 {
+     margin-left: 100px;
+     padding-top: 50px;
+}
+
+.logos-redes-sociales-fila-1 {
+    padding-top: 50px;
 }
 
 

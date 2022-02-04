@@ -3,6 +3,8 @@ import SeccionFormacion from './Components/SeccionFormacion';
 import SeccionFormulario from './Components/SeccionFormulario';
 import SeccionSobreMI from './Components/SeccionSobreMI';
 import './index.css'
+import 'animate.css';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <SeccionSobreMI />
         <SeccionFormacion />
         <SeccionFormulario />
+        <Footer />
     </>
 
   );

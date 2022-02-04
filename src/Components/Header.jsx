@@ -5,6 +5,7 @@ import LogoPortfolio from '../assets/logo-portfolio.png'
 import LogoFormacion from '../assets/logo-formacion.png'
 import LogoCursos from '../assets/logo-cursos.png'
 import LogoContacto from '../assets/logo-contacto.png'
+import 'animate.css';
 
 const Header = () => {
   return( 
