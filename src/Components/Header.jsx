@@ -10,7 +10,7 @@ import 'animate.css';
 const Header = () => {
   return( 
      <>
-            <div className="row">
+            <div className="row header-desktop">
                <div className="col-md-2 col-sm-2 contenedor-header-left">
                     <div className='contenedor-logo'>
                        <a href="#"> <img src={LogoVa} alt="logo-va" /></a>

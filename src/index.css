@@ -79,21 +79,6 @@
     color: #FCCAE2;
 }
 
-.animate__fadeInDown {
-    animation-duration: 2s;
-    /* animation-delay: 1s; */
-}
-
-.animate__fadeInRight {
-    animation-duration: 2s;
-   /*  animation-delay: 1s; */
-}
-
-.animate__fadeInLeft {
-    animation-duration: 2s;
-  /*   animation-delay: 2s; */
-}
-
 .seccion-hola-soy-VA h2 {
     font-size: 96px;
     line-height: 144px;
@@ -465,7 +450,183 @@ textarea.form-control.text-area-mensaje {
 }
 
 .logos-redes-sociales-fila-1 {
-    padding-top: 50px;
+     padding-top: 50px;
+}
+
+.logos-footer p:hover {
+    color: #FCCAE2;
+}
+
+/* ANIMACIONES */
+.animate__fadeInDown {
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
+}
+
+.animate__fadeInRight {
+    animation-duration: 2s;
+   /*  animation-delay: 1s; */
+}
+
+.animate__fadeInLeft {
+    animation-duration: 2s;
+  /*   animation-delay: 2s; */
+}
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .header-desktop {
+        display: none;
+    }
+
+    .contenedor-hola-soy-VA {
+        padding: 60px 20px;
+    }
+
+    .seccion-hola-soy-VA h1 {
+        font-size: 50px;
+    }
+
+    .seccion-hola-soy-VA h2 {
+        font-size: 40px;
+        line-height: 65px;
+    }
+
+    .seccion-hola-soy-VA h3 {
+        font-size: 25px;
+        font-weight: 200;
+        text-align: start;
+    }
+
+    .contenedor-seccion-sobre-mi-right {
+        padding: 0;
+        padding-left: 0;
+    }
+
+    .contenedor-seccion-sobre-mi-left {
+        padding: 20px;
+        padding-right: 0;
+    }
+
+    .btn-contactarme {
+        width: 55%;
+    }
+
+    .contenedor-seccion-formacion {
+        padding: 20px;
+    }
+
+    .seccion-formacion h2 {
+        font-size: 32px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .formacion h3 {
+        font-size: 22px;
+        line-height: 37px;
+    }
+
+    .formacion h4 {
+        font-size: 24px;
+        line-height: 42px;
+    }
+
+    .seccion-formacion img {
+        display: none;
+    }
+
+    .contenedor-seccion-cursos {
+        padding: 20px;
+    }
+
+    .seccion-cursos h2 {
+        font-size: 32px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .formacion-cursos h3 {
+        font-size: 24px;
+    }
+
+    .formacion-cursos h4 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .formacion-cursos h5 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .linea-rosa-1, .linea-rosa-2, .linea-rosa-3 {
+        display: none;
+    }
+
+    .formacion-cursos .conocimiento-informatico {
+        margin-top: 20px;
+        font-size: 32px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .input-nombre, .input-email, .text-area-mensaje {
+        width: auto;
+    }
+
+    .box-pink {
+        padding: 30px 40px;
+    }
+
+    .box-white {
+        padding: 20px;
+    }
+
+    .contenedor-formulario {
+        padding: 20px;
+    }
+
+    .contenedor-logos-redes-sociales {
+        padding-left: 0;
+    }
+
+    .logos-redes-sociales-fila-2 {
+        padding-top: 0;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .logos-redes-sociales-fila-1 {
+        padding-top: 0;
+    }
+
+    .contenedor-logos-redes-sociales {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        padding-top: 40px;
+        padding-left: 50px;
+    }
+
+    .contenedor-logo-footer {
+        padding: 40px;
+    }
+
+    .footer-mobile {
+        flex-direction: column-reverse;
+    }
+
+    .logos-footer p {
+        font-size: 14px;
+    }
+
+    .logos-footer img {
+        top: -9px;
+    }
 }
 
 
