@@ -1,6 +1,7 @@
 import React from 'react';
 import LogoFlecha from '../assets/logo-flecha.png'
 import FotoPerfil from '../assets/imagen-picky.png'
+import { Link } from 'react-router-dom'
 
 
 const SeccionSobreMI = () => {
@@ -36,7 +37,9 @@ const SeccionSobreMI = () => {
                         y por eso tengo la convicción que trabajar en ambientes con buen 
                         clima laboral hacen armonioso y agradable practicar esta profesión
                         que tanto aprecio y es parte de mi vida.</p>
-                    <a className='btn-contactarme' href="#">Contactarme</a>
+
+                     <Link to="/contacto" className='btn-contactarme'>Contactarme</Link>   
+
                 </div>
             </div>
         </div>

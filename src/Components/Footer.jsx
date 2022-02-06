@@ -4,6 +4,7 @@ import LogoWhatsapp from '../assets/logo-whatsapp.png'
 import LogoEmail from '../assets/logo-email.png'
 import LogoLinkedin from '../assets/logo-linkedin.png'
 import LogoUbicacion from '../assets/logo-ubicacion.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
         <div className="row footer-mobile">
             <div className="col-md-4 col-sm-4 contenedor-logo-footer">
                 <div className='logo-footer'>
-                   <a href="#"><img src={LogoFooter} alt="logo-footer" /></a> 
+                   <Link to="/"><img src={LogoFooter} alt="logo-footer" /></Link> 
                 </div>
             </div>
 

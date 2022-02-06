@@ -1,18 +1,10 @@
-/* @font-face {
-  font-family: 'Mabry';
-  src: url(./fonts/Mabry-Pro-Medium.otf);
-  src: url(./fonts/Mabry-Pro-Bold.otf);
-  src: url(./fonts/Mabry-Pro-Light.otf);
-}
- */
 
  body {
     width: 100%;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Mabry' , sans-serif;
-}
+ }
 
 /* HEADERS */
 .contenedor-header-left  {
@@ -60,6 +52,14 @@
 
 .contenedor-logo img {
     width: 105%;
+}
+
+.navbar {
+    display: none !important;
+}
+
+.contenedor-header-mobile {
+    display: none !important;
 }
 
 
@@ -402,6 +402,15 @@ textarea.form-control.text-area-mensaje {
     transition: all 1s;
 }
 
+.btn-error {
+    font-size: 16px;
+    color: #FD6769;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
 
 /* FOOTER */
 .contenedor-logo-footer, .contenedor-logos-redes-sociales {
@@ -457,6 +466,21 @@ textarea.form-control.text-area-mensaje {
     color: #FCCAE2;
 }
 
+
+/* PORTFOLIO */
+.contenedor-portfolio {
+    background-color: #5A98CD;
+    display: flex;
+    justify-content: center;
+    padding: 90px 30px;
+}
+
+.contenedor-portfolio iframe {
+    width: 80%;
+    height: 100vh;
+}
+
+
 /* ANIMACIONES */
 .animate__fadeInDown {
     animation-duration: 2s;
@@ -475,6 +499,116 @@ textarea.form-control.text-area-mensaje {
 
 
 
+/* MENU HAMBURGUESA */
+/* Menu Hamburguer */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+    top: 10px;
+    right: 100px;
+    position: absolute;
+  }
+  
+  .menu-bars:hover {
+    color: #769BD1;
+  }
+  
+  .menu-bars {
+    margin-left: 35px;
+    font-size: 35px;
+    width: 35px;
+    color: #C3C3C3;
+    background: none;
+  }
+  
+  .nav-menu {
+    width: 100%;
+    height: 100vh;
+    background-color: #FD6769;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: -100%; 
+    transition: 850ms;
+    z-index: 100;
+  
+  }
+  
+  .nav-menu.active {
+    left: 0;
+    transition: 350ms;
+  }
+
+  .nav-menu.active::before {
+    content: "";
+    background-image: url(../src/assets/logo-mobile.png);
+    width: 140px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 37px;
+    left: 35px;
+    height: 115px;
+  }
+  
+  .nav-text {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .nav-text a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-size: 45px;
+    color: #FFFFFF;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-menu-items {
+    width: 100%;
+  }
+  
+  .navbar-toggle {
+    color: #FAFAFA;
+    list-style: none;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 10px;
+    right: 100px;
+    position: relative;
+    margin-bottom: 120px;
+  }
+  
+  .nav-text a h3 {
+    font-size: 40px;
+    padding-left: 50px;
+  }
+
+
+  /* MENU MOBILE HEADER */
+  .contenedor-header-mobile {
+      background-color: #FFF;
+      padding: 20px;
+  }
+
+  .imagen-logo-mobile {
+      padding-left: 20px;
+  }
+
+
+
+
 /* MOBILE */
 @media (max-width: 768px) {
     .header-desktop {
@@ -483,6 +617,7 @@ textarea.form-control.text-area-mensaje {
 
     .contenedor-hola-soy-VA {
         padding: 60px 20px;
+        text-align: center;
     }
 
     .seccion-hola-soy-VA h1 {
@@ -497,12 +632,20 @@ textarea.form-control.text-area-mensaje {
     .seccion-hola-soy-VA h3 {
         font-size: 25px;
         font-weight: 200;
-        text-align: start;
+        text-align: center;
     }
 
     .contenedor-seccion-sobre-mi-right {
         padding: 0;
         padding-left: 0;
+        padding-top: 20px;
+
+    }
+
+    .contenedor-seccion-sobre-mi-right img {
+        width: 90%;
+        display: block;
+        margin: auto;
     }
 
     .contenedor-seccion-sobre-mi-left {
@@ -511,7 +654,9 @@ textarea.form-control.text-area-mensaje {
     }
 
     .btn-contactarme {
-        width: 55%;
+        width: 48%;
+        display: block;
+        margin: auto;
     }
 
     .contenedor-seccion-formacion {
@@ -536,6 +681,15 @@ textarea.form-control.text-area-mensaje {
 
     .seccion-formacion img {
         display: none;
+    }
+
+    .seccion-sobre-mi-left h2 {
+        text-align: center;
+    }
+
+    .seccion-sobre-mi-left p {
+        text-align: center;
+        padding: 0 15px;
     }
 
     .contenedor-seccion-cursos {
@@ -627,6 +781,238 @@ textarea.form-control.text-area-mensaje {
     .logos-footer img {
         top: -9px;
     }
+
+    .navbar {
+        display: block !important;
+    }
+
+    .contenedor-header-mobile {
+        display: block !important;
+    }
 }
+
+
+
+ /* BRAKEPOINTS */
+  
+ @media (max-width: 413.98px) {
+    .navbar {
+      height: 0;
+      right: 50px;
+    }
+    
+    .navbar-toggle {
+      top: 0;
+      right: 50px;
+    }
+    
+    .nav-menu {
+      left: -333%;
+      position: fixed;
+    }
+    
+    .nav-text a h3 {
+      font-size: 20px;
+      padding-left: 0;
+      text-transform: uppercase;
+    }
+    
+    .navbar-toggle {
+      margin-bottom: 110px;
+    }
+  
+  }
+  
+  @media (min-width: 414px) and (max-width: 575.98px) { 
+    .navbar {
+      height: 0;
+      right: 50px;
+    }
+    
+    .navbar-toggle {
+      top: 0;
+      right: 50px;
+    }
+    
+    .nav-menu {
+      left: -333%;
+      position: fixed;
+    }
+    
+    .nav-text a h3 {
+        font-size: 20px;
+        padding-left: 0;
+        text-transform: uppercase;
+    }
+    
+    .navbar-toggle {
+      margin-bottom: 110px;
+    } 
+
+    .btn-contactarme {
+        width: 45%;
+    }
+   
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    .navbar {
+      height: 0;
+      right: 50px;
+    }
+    
+    .navbar-toggle {
+      top: 0;
+      right: 50px;
+    }
+    
+    .nav-menu {
+      left: -333%;
+      position: fixed;
+    }
+    
+    .nav-text a h3 {
+        font-size: 20px;
+        padding-left: 0;
+        text-transform: uppercase;
+    }
+    
+    .navbar-toggle {
+      margin-bottom: 110px;
+    }
+
+    .contenedor-seccion-sobre-mi-right , .contenedor-seccion-sobre-mi-left {
+        width: 100%;
+    }
+
+    .btn-contactarme {
+        width: 33%;
+    }
+
+    .contenedor-seccion-formacion {
+        padding-left: 40px;
+    }
+
+    .contenedor-seccion-cursos {
+        padding-left: 30px;
+    }
+
+    .input-nombre, .input-email, .text-area-mensaje {
+        width: 400px;
+    }
+
+    .contenedor-logos-redes-sociales {
+        width: 100%;
+    }
+
+    .contenedor-logo-footer {
+        width: 100%;
+    }
+
+    .contenedor-logos-redes-sociales {
+        padding-left: 155px;
+    }
+  
+  }
+   
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    .navbar {
+      height: 0;
+      right: 50px;
+    }
+    
+    .navbar-toggle {
+      top: 0;
+      right: 50px;
+    }
+    
+    .nav-menu {
+      left: -333%;
+      position: fixed;
+    }
+    
+    .nav-text a h3 {
+        font-size: 20px;
+        padding-left: 0;
+        text-transform: uppercase;
+    }
+    
+    .navbar-toggle {
+      margin-bottom: 110px;
+    }
+
+    .contenedor-seccion-sobre-mi-right , .contenedor-seccion-sobre-mi-left {
+        width: 100%;
+    }
+
+    .btn-contactarme {
+        width: 33%;
+    }
+
+    .contenedor-seccion-formacion {
+        padding-left: 40px;
+    }
+
+    .contenedor-seccion-cursos {
+        padding-left: 30px;
+    }
+
+    .input-nombre, .input-email, .text-area-mensaje {
+        width: 550px;
+    }
+
+    .contenedor-logos-redes-sociales {
+        width: 100%;
+    }
+
+    .contenedor-logo-footer {
+        width: 100%;
+    }
+
+    .contenedor-logos-redes-sociales {
+        padding-left: 260px;
+    }
+
+    .contenedor-seccion-sobre-mi-left {
+        justify-content: center;
+        padding-right: 10px;
+    }
+
+    .contenedor-seccion-formacion {
+        justify-content: flex-start;
+    }
+  
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .logos-redes-sociales-fila-2 {
+        margin-left: 0;
+    }
+
+    .contenedor-logos-redes-sociales {
+        padding-left: 0;
+    }
+
+    .btn-contactarme {
+        width: 42%;
+    }
+
+    .seccion-hola-soy-VA h1 {
+        font-size: 100px;
+    }
+
+    .seccion-hola-soy-VA h2 {
+        font-size: 56px;
+        line-height: 96px;
+    }
+
+    .seccion-hola-soy-VA h3 {
+        font-size: 30px;
+    }
+  }
+  
+  @media (min-width: 1200px) { 
+  
+  }
 
 
