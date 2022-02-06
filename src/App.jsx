@@ -1,3 +1,4 @@
+
 import './index.css'
 import 'animate.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -31,7 +32,6 @@ function App() {
             <Footer />
         </Router>
     </>
-
   );
 }
 
