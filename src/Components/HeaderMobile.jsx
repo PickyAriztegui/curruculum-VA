@@ -6,7 +6,7 @@ const HeaderMobile = () => {
   return (
             <>
    
-            <div className="row">
+            <div className="row header-margin-bottom">
                 <div className="col-md-12 col-sm-12 contenedor-header-mobile">
                      <div className='imagen-logo-mobile'>
                         <img src={LogoVA} alt="logo-va" />

@@ -1,13 +1,29 @@
 import React from 'react';
+import ImgDesktop from '../assets/figma-desktop.png'
+import ImgMobile from '../assets/figma-mobile.png'
 
 
 const Portfolio = () => {
   return (
        <>
             <div className='row'>
-               <div className="col-md-12 col-sm-12 contenedor-portfolio">
-               <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FcMimfjQFs4bpTWwDoasrMT%2Fe-commerce%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+               <div className="col-md-12 col-sm-12 contenedor-portfolio-desktop">
+                    <div className="img-desktop">
+                         <h3>Desktop</h3>
+                         <img src={ImgDesktop} alt="imagen-figma-desktop" />
+                    </div>
+                    <div className="img-desktop">
+                         <h3>Mobile</h3>
+                         <img src={ImgMobile} alt="imagen-figma-mobile" />
+                    </div>
+                  
                </div>
+
+             {/*   <div className="col-md-6 col-sm-6 contenedor-portfolio-mobile">
+                  <div className="img-mobile">
+                  <img src={ImgMobile} alt="imagen-figma-mobile" />
+                  </div>
+               </div> */}
             </div>
        </>
   ) 
