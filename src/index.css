@@ -1045,7 +1045,32 @@ textarea.form-control.text-area-mensaje {
   }
   
   @media (min-width: 1200px) { 
-  
+    .seccion-hola-soy-VA h1 {
+        font-size: 100px;
+    }
+
+    .seccion-hola-soy-VA h2 {
+        font-size: 80px;
+    }
+
+    .seccion-hola-soy-VA h3 {
+        font-size: 30px;
+    }
   }
+
+  @media (min-width: 1500px) { 
+    .seccion-hola-soy-VA h1 {
+        font-size: 144px;
+    }
+
+    .seccion-hola-soy-VA h2 {
+        font-size: 96px;
+    }
+
+    .seccion-hola-soy-VA h3 {
+        font-size: 36px;
+    }
+  }
+
 
 
