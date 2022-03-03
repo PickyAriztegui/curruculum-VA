@@ -1,29 +1,23 @@
 import React from 'react';
-import ImgDesktop from '../assets/figma-desktop.png'
-import ImgMobile from '../assets/figma-mobile.png'
+import CardHomeColor from '../assets/card-home-color.png'
+import CardVere from '../assets/card-vere.png'
+import { Link } from 'react-router-dom'
 
 
 const Portfolio = () => {
   return (
        <>
             <div className='row'>
-               <div className="col-md-12 col-sm-12 contenedor-portfolio-desktop">
-                    <div className="img-desktop">
-                         <h3>Desktop</h3>
-                         <img src={ImgDesktop} alt="imagen-figma-desktop" />
+               <div className="col-md-12 col-sm-12 contenedor-portfolio-desktop-original">
+                    <div className="box-porfolio-left">
+                    <Link to="/homecolor"> <img className='tarjetas-portfolios' src={CardHomeColor} alt="card-home-color" /></Link> 
                     </div>
-                    <div className="img-desktop">
-                         <h3>Mobile</h3>
-                         <img src={ImgMobile} alt="imagen-figma-mobile" />
+                    
+                    <div className="box-porfolio-right">
+                    <Link to="/vere"> <img className='tarjetas-portfolios' src={CardVere} alt="card-vere" /></Link> 
                     </div>
                   
                </div>
-
-             {/*   <div className="col-md-6 col-sm-6 contenedor-portfolio-mobile">
-                  <div className="img-mobile">
-                  <img src={ImgMobile} alt="imagen-figma-mobile" />
-                  </div>
-               </div> */}
             </div>
        </>
   ) 
