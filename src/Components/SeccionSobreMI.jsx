@@ -18,9 +18,9 @@ const SeccionSobreMI = () => {
             <div className="col-md-6 col-sm-6 contenedor-seccion-sobre-mi-left">
                 <div className='seccion-sobre-mi-left'>
                     <h2>SOBRE MÍ <img className='logo-flecha' src={LogoFlecha} alt="logo-flecha" /></h2>
-                    <p>Soy diseñadora UI con buen conocimiento de Diseño en 
-                        Comunicación Visual, me dedico a crear visualmente la interfaz 
-                        de diferentes productos digitales.</p>
+                    <p>Soy Diseñadora de Experiencia de Usuario UX y UI de Interfaces, 
+                        me dedico a investigar, analizar, planificar y proyectar ideas
+                        y experiencias con contenido visual de diferentes productos digitales.</p>
                     <p> Tengo facilidad y muy buena predisposición para aprender el uso 
                         de nuevas herramientas y metodologías que se requieran para
                         alcanzar mis objetivos así como optimizar los procesos que me
