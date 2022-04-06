@@ -8,13 +8,6 @@ const SeccionSobreMI = () => {
   return (
       <>
         <div className="row">
-            <div className="col-md-12 col-sm-12 contenedor-hola-soy-VA">
-                <div className='seccion-hola-soy-VA'>
-                    <h1 className='animate__fadeInDown'>HOLA!</h1>
-                    <h2 className='animate__fadeInRight'>Soy Diseñadora UI /Gráfica</h2>
-                    <h3 className='animate__fadeInLeft'>VICTORIA ARIZTEGUI</h3>
-                </div>
-            </div>
 
             <div className="col-md-6 col-sm-6 contenedor-seccion-sobre-mi-right">
                 <div className='seccion-sobre-mi-right'>

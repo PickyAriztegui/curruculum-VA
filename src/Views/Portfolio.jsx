@@ -1,12 +1,22 @@
 import React from 'react';
+import CardHomeColor from '../assets/card-home-color.png'
+import CardVere from '../assets/card-vere.png'
+import { Link } from 'react-router-dom'
 
 
 const Portfolio = () => {
   return (
        <>
             <div className='row'>
-               <div className="col-md-12 col-sm-12 contenedor-portfolio">
-               <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FcMimfjQFs4bpTWwDoasrMT%2Fe-commerce%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+               <div className="col-md-12 col-sm-12 contenedor-portfolio-desktop-original">
+                    <div className="box-porfolio-left">
+                    <Link to="/homecolor"> <img className='tarjetas-portfolios' src={CardHomeColor} alt="card-home-color" /></Link> 
+                    </div>
+                    
+                    <div className="box-porfolio-right">
+                    <Link to="/vere"> <img className='tarjetas-portfolios' src={CardVere} alt="card-vere" /></Link> 
+                    </div>
+                  
                </div>
             </div>
        </>

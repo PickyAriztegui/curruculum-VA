@@ -1,7 +1,7 @@
 import React from 'react';
 import LogoVa from '../assets/logo-VA.png'
 import 'animate.css';
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import HeaderMobile from './HeaderMobile';
 
 const Header = () => {
@@ -19,19 +19,19 @@ const Header = () => {
                <div className="col-md-10 col-sm-10 contenedor-header-right">
                    <div className='contenedor-menu'>
                         <div className='menu-nav'>
-                            <Link className='ancla-menu' to="/sobremi">SOBRE MÍ</Link> 
+                            <NavLink className='ancla-menu' activeClassName="active" to="/sobremi">SOBRE MÍ</NavLink> 
                         </div>
                         <div className='menu-nav'>
-                            <Link className='ancla-menu' to="/portfolio">PORTFOLIO</Link>  
+                            <NavLink className='ancla-menu' to="/portfolio">PORTFOLIO</NavLink>  
                         </div>
                         <div className='menu-nav'>
-                            <Link className='ancla-menu' to="formacion">FORMACION</Link> 
+                            <NavLink className='ancla-menu' to="formacion">FORMACION</NavLink> 
                         </div>
                         <div className='menu-nav'>
-                            <Link className='ancla-menu' to="cursos">ESTUDIOS / CURSOS </Link> 
+                            <NavLink className='ancla-menu' to="cursos">ESTUDIOS / CURSOS </NavLink> 
                         </div>
                         <div className='menu-nav'>
-                            <Link className='ancla-menu' to="contacto">CONTACTO</Link>
+                            <NavLink className='ancla-menu' to="contacto">CONTACTO</NavLink>
                         </div>
                    </div>
                </div>

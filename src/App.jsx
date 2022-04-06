@@ -10,6 +10,8 @@ import SeccionSobreMI from './Components/SeccionSobreMI';
 import SeccionFormacion from './Components/SeccionFormacion';
 import SeccionFormulario from './Components/SeccionFormulario';
 import SeccionCursos from './Components/SeccionCursos';
+import ProyectoHomeColor from './Components/ProyectoHomeColor'
+import ProyectoVere from './Components/ProyectoVere'
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
                   <Route path='/formacion' exact component={SeccionFormacion  } />
                   <Route path='/cursos' exact component={SeccionCursos} />
                   <Route path='/contacto' exact component={SeccionFormulario} />
+                  <Route path='/homecolor' exact component={ProyectoHomeColor} />
+                  <Route path='/vere' exact component={ProyectoVere} />
                   
               </Switch>
 
